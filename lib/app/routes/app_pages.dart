@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 import 'package:get/get.dart';
 import 'package:star_wars_movies_people/app/modules/home/views/oficial_site_view.dart';
 

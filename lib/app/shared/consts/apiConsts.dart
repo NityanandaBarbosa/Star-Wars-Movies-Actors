@@ -1,5 +1,5 @@
 class ApiConsts {
-  final baseUrl = "https://swapi.dev/api/";
-  final actors = "people";
-  final films = "films";
+  static const baseUrl = "https://swapi.dev/api";
+  static const actors = "$baseUrl/people";
+  static const films = "$baseUrl/films";
 }
