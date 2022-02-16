@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:star_wars_movies_people/app/modules/home/repositories/actors_repository.dart';
 import 'package:star_wars_movies_people/app/modules/home/repositories/films_repository.dart';
 import 'package:star_wars_movies_people/app/shared/dio/dio.dart';
 
@@ -15,6 +16,9 @@ class HomeBinding extends Bindings {
     );
     Get.lazyPut<FilmsRepository>(
       () => FilmsRepository(),
+    );
+    Get.lazyPut<ActorsRepository>(
+      () => ActorsRepository(),
     );
   }
 }

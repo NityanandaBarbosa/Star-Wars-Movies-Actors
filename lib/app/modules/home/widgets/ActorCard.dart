@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:star_wars_movies_people/app/modules/home/models/actors_model.dart';
 
-import '../models/films_model.dart';
-
-class CardComp extends StatelessWidget {
-  final Movie movie;
-  const CardComp({Key? key, required this.movie}) : super(key: key);
+class ActorCard extends StatelessWidget {
+  final Actor actor;
+  ActorCard({Key? key, required this.actor}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,11 +14,11 @@ class CardComp extends StatelessWidget {
           child: Column(
             children: [
               Text(
-                "${movie.title}",
+                "${actor.name}",
                 style: TextStyle(fontSize: 12),
               ),
               Text(
-                "${movie.director}",
+                "${actor.gender}",
                 style: TextStyle(fontSize: 12),
               ),
             ],
